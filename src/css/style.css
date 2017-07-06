@@ -1,0 +1,83 @@
+body {
+  font-size: 0.12rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+header {
+  font-size: 0.18rem;
+  height: 0.44rem;
+  line-height: 0.44rem;
+  text-align: center;
+  position: relative;
+  background: #334;
+  color: #fff; }
+  header .prev {
+    position: absolute;
+    left: 0.1rem; }
+  header .next {
+    position: absolute;
+    right: 0.1rem; }
+
+main {
+  -webkit-flex: 1;
+  overflow-y: scroll; }
+
+.mark {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.3); }
+  .mark .disk {
+    width: 90%;
+    height: 4rem;
+    background: #FFFFFF;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto; }
+    .mark .disk .menu {
+      margin-top: 0.5rem;
+      text-align: center; }
+      .mark .disk .menu p {
+        font-size: 0.16rem;
+        color: #767779; }
+    .mark .disk .con {
+      width: 90%;
+      height: 1rem;
+      margin: 0.2rem 5%; }
+      .mark .disk .con > div {
+        width: 100%;
+        height: 0.5rem;
+        border-bottom: 1px solid #DCDEDD;
+        box-sizing: border-box;
+        padding: 0 3%;
+        line-height: 0.5rem; }
+        .mark .disk .con > div i {
+          display: inline-block;
+          width: 10%;
+          text-align: center;
+          color: #8CD7B7;
+          vertical-align: sub; }
+        .mark .disk .con > div input {
+          width: 80%;
+          height: 0.4rem;
+          border: 0; }
+    .mark .disk > input {
+      width: 90%;
+      height: 0.4rem;
+      background: #2FBA77;
+      border-radius: 5px;
+      color: #fff;
+      border: 0;
+      margin: 0.2rem 5%; }
+
+/*# sourceMappingURL=style.css.map */

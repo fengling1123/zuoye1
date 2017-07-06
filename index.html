@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+       .lightblue{
+       	color:lightblue;
+       }
+       .pink{
+       	color:pink;
+       }
+	</style>
+</head>
+<body ng-app="myapp">
+    <div ng-controller="mycontrl">
+    	<input type="text" ng-model="username" ng-init="username='张三'">
+    	<input type="text" ng-model="pwd">
+    	<p>{{username}}</p>
+    	<p ng-bind="pwd"></p>
+    	<p>{{a+b}}</p>
+    	<p ng-bind="a*b"></p>
+    	<ul ng-init="arrs=[{'name':'张三','age':'18'},{'name':'李四','age':'20'}]">
+    	     <li ng-repeat="arr in arrs">
+    	     	姓名：{{arr.name}}
+    	     	年龄：{{arr.age}}
+    	     </li> 
+    	</ul>
+    	<p ng-show="true">111</p>
+    	<p ng-show="false">222</p>
+    	<p ng-hide="true">333</p>
+    	<p ng-hide="false">444</p>
+    	<p ng-class="lightblue">1111111</p>
+    	<p ng-class="pink">2222222</p>
+    	<input type="button" value="提交" ng-click="info()">
+    	<div ng-init="myswap='true'" ng-if="myswap">
+    	    判断	
+    	</div>
+    </div>
+	<script src="js/angular.min.js"></script>
+	<script>
+		var app=angular.module('myapp',[]);
+		app.controller('mycontrl',function($scope){
+             $scope.username="冯玲";
+             $scope.pwd="123";
+             $scope.a=3;
+             $scope.b=4;
+             $scope.lightblue="lightblue";
+             $scope.pink="pink";
+             $scope.info=function(){
+             	alert(111)
+             }
+		})
+	</script>
+</body>
+</html>
